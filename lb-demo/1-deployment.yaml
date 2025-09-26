@@ -3,9 +3,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: myapp
-  namespace: autoscaler-demo
+  namespace: lb-demo
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: myapp
@@ -16,14 +16,14 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: <>
+          image: kunal13/myapp
           ports:
             - name: http
               containerPort: 8080
           resources:
             requests:
-              memory: 512Mi
-              cpu: 500m
+              memory: 128Mi
+              cpu: 100m
             limits:
-              memory: 512Mi
-              cpu: 500m
+              memory: 128Mi
+              cpu: 100m
