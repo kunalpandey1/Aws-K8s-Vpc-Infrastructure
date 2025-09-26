@@ -7,7 +7,7 @@ metadata:
   name: myapp
   namespace: ssl-ingress
   annotations:
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:424432388155:certificate/7f32327d-ad95-4977-91c2-8fae85e9e598
+    alb.ingress.kubernetes.io/certificate-arn: <use_your_certificate_arn>
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
     alb.ingress.kubernetes.io/ssl-redirect: "443"
     alb.ingress.kubernetes.io/scheme: internet-facing
