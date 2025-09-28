@@ -154,7 +154,7 @@ kubectl get nodes
 kubectl get pods --all-namespaces
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
